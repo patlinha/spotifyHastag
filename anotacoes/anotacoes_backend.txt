@@ -1,0 +1,38 @@
+npm init -y
+--> vai criar o package .json
+
+npm i express
+--> instala o express
+
+node ./api/server.js
+node   --watch ./api/server.js
+./api/server.js = é o caminho do arquivo que quero executar o servidor
+--> para rodar o back no terminal
+--> o 'watch' faz com que não tenha que ficar desligando e religando o servidor
+
+node ./api/connect.js
+
+npm i axios
+--> fazer a instalação na pasta do front-end
+
+==========================================
+site para deploy:
+https://render.com/
+
+==========================================
+API = Application Programming Interface
+(sistema usado para comunicação entre 2 ou mais entidades)
+
+Adicionar:
+  "type": "module",
+no package.json do backend
+
+Middleware: servidor do back é diferente do servidor do front;
+app.use(cors())
+app.use(express.json())
+
+CRUD = POST | GET | PUT | DELETE
+
+navegador: a requisição vai ser sempre do tipo GET
+
+app.get('/') --> / é o endpoint

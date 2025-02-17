@@ -1,0 +1,74 @@
+1h30min
+https://www.youtube.com/watch?v=oPLOZfqk7qQ&t=3s
+
+npm node packet manager
+=
+vite.dev:
+- servidor local
+- build (todos os arquivos em 3: htmal / css / javascript)
+
+json: javascript object notation
+package.json: todas as tecnologias usadas no projeto
+=
+npm create vite@latest .
+>React
+>JavaScript
+
+npm install 
+-> instala todas as dependências do package.json
+saída = node_modules
+
+npm run dev
+-> consultando 'scripts' dentro de package.json, vai ter o comando dev; nesse caso o cite por padrão inicializa o servidor;
+
+npm i react-router-dom
+
+App.jsx -> joga dentro do main.jsx -> joga dentro do index.html
+
+==== Comandos VSCode ====
+Shitf + Alt + ->
+- copia pra linha de cima
+Alt + ->
+- move pra linha de cima
+Ctrl + ;
+- comenta a linha
+Ctrl + D
+- seleciona todas as instâncias da mesma coisa que vc selecionou
+=========================
+React Snippet (ES7 + React/Redux...)
+rafce 
+
+Componentes do React recebem props (equivalente a função recebe parâmetros)
+Quando os componentes do React se renderizam?
+qdo uma das variáveis de estado de um componente é atualizada
+Hook = useState --> cria variável de estado
+
+map:
+const myArray = [121, 213123, 12310956, 1271, 123401] 
+myArray.map((currentValue, index) => currentValue)
+>> Array(5) [ 121, 213123, 12310956, 1271, 123401 ]
+myArray.map((currentValue, index) => 'SingleItem')
+>> Array(5) [ "SingleItem", "SingleItem", "SingleItem", "SingleItem", "SingleItem" ]
+const items = 5
+Array(items).fill().map((currentValue, index) => 'SingleItem')
+>> Array(5) [ "SingleItem", "SingleItem", "SingleItem", "SingleItem", "SingleItem" ]
+Array(items).fill().map(() => 'SingleItem')
+>> Array(5) [ "SingleItem", "SingleItem", "SingleItem", "SingleItem", "SingleItem" ]
+
+{artistArray.map(() => (<SingleItem key={`${title}-${items}`}/>))}
+
+template strings: `${variavel} texto ${variavel2}`
+
+Spread Operator (funciona com array e objetos):
+const newObj = {...obj} --> está copiando todos os elementos de obj para newObj (Spread Operator)
+const newObj = obj --> está copiando o endereço de obj para newObj
+
+artist === undefined ? "Artista" : artist
+artist ?? "Artista"
+
+Desestruturação:
+const pathname = useLocation().pathname
+const {pathname} = useLocation()
+
+aula complementar CSS:
+https://www.youtube.com/watch?v=sJcyKmc_GMw
